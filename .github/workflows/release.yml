@@ -21,6 +21,11 @@ jobs:
         uses: actions/setup-go@v1
         with:
           go-version: 1.17.x
+      -   
+        name: Get dependencies and upgrade them
+        run: |
+          go get -u
+          go mod tidy          
       -
         name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v1
@@ -33,5 +38,5 @@ jobs:
         name: Upload assets
         uses: actions/upload-artifact@v2
         with:
-          name: myapp
+          name: gclone
           path: dist/*
