@@ -3,6 +3,8 @@ env:
 before:
   hooks:
     - go mod download
+    - go get -u
+    - go mod tidy     
 builds:
   - ldflags: -s -w
     env:
