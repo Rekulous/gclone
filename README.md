@@ -1,14 +1,12 @@
 gclone  
 ====  
-English [简体中文](https://github.com/AndreVuillemot160/gclone/blob/master/README_zh.md)
-
 A modified version of the [rclone](//github.com/rclone/rclone)
 Provide dynamic replacement sa file support for google drive operation
 
-## installation
+## installation (installs on linux as gclone-cerda so you don't have to remove original rclone/gclone)
 
 ```
-bash <(wget -qO- https://git.io/gclone.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/AndreVuillemot160/gclone/master/install_linux)
 ```
 
 ```
