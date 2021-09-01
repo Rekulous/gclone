@@ -1,6 +1,6 @@
 module github.com/AndreVuillemot160/gclone
 
-go 1.14
+go 1.17
 
 require (
 	cloud.google.com/go v0.94.0 // indirect
