@@ -6,7 +6,6 @@ before:
     - go get -u
     - go mod tidy     
 builds:
-  - id: desktopbinaries
   - ldflags: -s -w
     env:
       - CGO_ENABLED=0
@@ -17,7 +16,7 @@ builds:
     goarch:
       - 386
       - amd64
-  - id: armbinaries
+  - id: desktopbinaries      
   - ldflags: -s -w
     env:
       - CGO_ENABLED=0
@@ -27,7 +26,7 @@ builds:
     goarch:
       - arm
       - arm64
-
+  - id: armbinaries
 archives:
   -
     replacements:
