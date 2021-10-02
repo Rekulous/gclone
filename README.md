@@ -1,7 +1,6 @@
-gclone  
+GClone  
 ====  
-A modified version of the [rclone](//github.com/rclone/rclone)
-Provide dynamic replacement sa file support for google drive operation
+An updated fork of the original GClone GitHub Repo by Donwa. GClone is an RClone mod for support of multiple Service Account configuration.
 
 ## installation (installs on linux as gclone-cerda so you don't have to remove original rclone/gclone)
 
